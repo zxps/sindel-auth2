@@ -1,0 +1,8 @@
+.idea
+sindel-auth.code-workspace
+build/*
+!build/.gitkeep
+run.log
+run.pid
+/securify
+config.json

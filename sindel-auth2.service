@@ -1,0 +1,14 @@
+[Unit]
+Description=Sindel Auth2 Service (gRPC)
+After=mariadb.service
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=owl
+ExecStart=/var/www/project-directory/services/auth2/sindel_auth2 -c=/var/www/project-directory/services/auth2/config.json
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
